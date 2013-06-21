@@ -1,3 +1,4 @@
+<?php include_once('global.php'); ?>
 <?php
 
 $idUser         = $_REQUEST['uid'];
@@ -30,19 +31,27 @@ switch ($curso2) {
 }
 
 switch ($curso1_turno) {
-  case '1': $curso1_turno = "Manhã"; break;
-  case '2': $curso1_turno = "Tarde"; break;
-  case '3': $curso1_turno = "Noite"; break;
-  case '4': $curso1_turno = "Tarde 13h30 às 15h"; break;
-  case '5': $curso1_turno = "Tarde 15h30 às 17h"; break;
+  case '1': $curso1_turno = "Manhã (8h30 às 12h) - 3ª e 5ª feiras"; break;
+  case '2': $curso1_turno = "Tarde (14h às 17h30) - 3ª e 5ª feiras"; break;
+  case '3': $curso1_turno = "Noite (18h às 20h30) - 4ª e 6ª feiras"; break;
+  case '4': $curso1_turno = "Tarde (14h às 15h30) - 4ª e 6ª feiras"; break;
+  case '5': $curso1_turno = "Tarde (16h às 17h30) - 4ª e 6ª feiras"; break;
+  case '6': $curso1_turno = "Manhã (10h às 11h30) - 4ª e 6ª feiras"; break;
+  case '7': $curso1_turno = "Noite (18h às 19h30) - 3ª e 5ª feiras"; break;
+  case '8': $curso1_turno = "Manhã (8h30 às 12h) - 4ª e 6ª feiras"; break;
+  case '9': $curso1_turno = "Tarde (14h às 17h30) - 4ª e 6ª feiras"; break;
 }
 
 switch ($curso2_turno) {
-  case '1': $curso2_turno = "Manhã"; break;
-  case '2': $curso2_turno = "Tarde"; break;
-  case '3': $curso2_turno = "Noite"; break;
-  case '4': $curso2_turno = "Tarde 13h30 às 15h"; break;
-  case '5': $curso2_turno = "Tarde 15h30 às 17h"; break;
+  case '1': $curso2_turno = "Manhã (8h30 às 12h) - 3ª e 5ª feiras"; break;
+  case '2': $curso2_turno = "Tarde (14h às 17h30) - 3ª e 5ª feiras"; break;
+  case '3': $curso2_turno = "Noite (18h às 20h30) - 4ª e 6ª feiras"; break;
+  case '4': $curso2_turno = "Tarde (14h às 15h30) - 4ª e 6ª feiras"; break;
+  case '5': $curso2_turno = "Tarde (16h às 17h30) - 4ª e 6ª feiras"; break;
+  case '6': $curso2_turno = "Manhã (10h às 11h30) - 4ª e 6ª feiras"; break;
+  case '7': $curso2_turno = "Noite (18h às 19h30) - 3ª e 5ª feiras"; break;
+  case '8': $curso2_turno = "Manhã (8h30 às 12h) - 4ª e 6ª feiras"; break;
+  case '9': $curso2_turno = "Tarde (14h às 17h30) - 4ª e 6ª feiras"; break;
 }
 
 ?>
@@ -87,7 +96,7 @@ switch ($curso2_turno) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Praça do Conhecimento - Inscrições 2013.1</a>
+          <a class="brand" href="#">Praça do Conhecimento - Inscrições <?php echo $inscricao_exercicio; ?></a>
         </div>
       </div>
     </div>
@@ -104,8 +113,10 @@ switch ($curso2_turno) {
     <p>Curso (opção 1): <b><?php echo $curso1; ?></b> (<?php echo $curso1_turno; ?>)</p>
     <p>Curso (opção 2): <b><?php echo $curso2; ?></b> (<?php echo $curso2_turno; ?>)</p>
     <hr>
-    <p>Lembre-se de confirmar as datas dos sorteios no site da Praça do Conhecimento (<a href="http://www.pracadoconhecimento.com.br/inscricoes-abertas-para-os-cursos-da-praca-do-conhecimento/" target="_blank">link</a>), ou com os monitores.<br> 
-      Anote estas informações geradas ou imprima esta página e apresente no dia do sorteio.</p>
+    <div class="well well-large">
+      <h4>Anote estas informações geradas ou imprima esta página e apresente no dia do sorteio.</h4>
+      <p>Lembre-se de confirmar as datas dos sorteios no site da <strong>Praça do Conhecimento</strong>, ou com os monitores.</p>
+    </div>
     <hr>
     <small>Boa Sorte!</small>
 
