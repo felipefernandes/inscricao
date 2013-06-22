@@ -114,8 +114,8 @@ switch ($curso2_turno) {
     <p>Curso (opção 2): <b><?php echo $curso2; ?></b> (<?php echo $curso2_turno; ?>)</p>
     <hr>
     <div class="well well-large">
-      <h4>Anote estas informações geradas ou imprima esta página e apresente no dia do sorteio.</h4>
-      <p>Lembre-se de confirmar as datas dos sorteios no site da <strong>Praça do Conhecimento</strong>, ou com os monitores.</p>
+      <h4>Anote estas informações geradas ou imprima esta página e apresente no dia da matricula.</h4>
+      <p>Em caso de dúvidas, entre em contato através do Fale Conosco do site, ou diretamente com os monitores na Praça do Conhecimento.</p>
     </div>
     <hr>
     <small>Boa Sorte!</small>

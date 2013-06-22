@@ -38,6 +38,8 @@ if (!$conexao)
 die ("Erro de conexão com localhost, o seguinte erro ocorreu -> ".mysql_error());//aqui irei testar se houve falha de conexão
 
 //conectando com a tabela do banco de dados
+$database = 'webpraca_inscricao';
+$inscricao_tabela = "inscricao2013_2";
 $banco = mysql_select_db($database, $conexao); //nome da tabela onde os dados serão armazenados
 
 mysql_query("SET NAMES 'utf8'");
@@ -58,7 +60,7 @@ mysql_query($query, $conexao);
 //São apenas os nomes dos campos que constam na tabela inscricao2013.
 //VALUES = indica que serão inseridos os seguintes valores.
 
-$queryLastItem = "SELECT * FROM ". $inscricao_tabela ." ORDER BY ID DESC LIMIT 1";
+$queryLastItem = "SELECT * FROM `$inscricao_tabela` ORDER BY ID DESC LIMIT 1";
 $result = mysql_query($queryLastItem, $conexao) or die(mysql_error());
 $idUser = "";
 //session_start(); //adiciona a identificação da sessão um número único

@@ -102,7 +102,7 @@ $inscricao_bd = "";
 			</tbody>
 		</table>
 
-		<p>As vagas dos cursos serão preenchidas mediante sorteios realizados no dia <strong>XX/XX/XX</strong>, 
+		<p>As vagas dos cursos serão preenchidas mediante sorteios realizados no dia <strong>17/07/2013</strong>, 
 			nos horários indicados na tabela abaixo. Os sorteios serão abertos ao público.</p>
 
 		<table class="table table-striped">
@@ -154,8 +154,9 @@ $inscricao_bd = "";
 		<hr>
 
 		<div class="well well-large">
-			<h4>Preencha com atenção todos os itens e em seguida imprima a confirmação
-			 de matrícula no seu email.</h4>
+			<h4>Preencha com atenção todos os itens e em seguida anote estas informações geradas ou 
+				imprima esta página e apresente no dia da matricula.</h4>
+
 			<p>Em caso de dúvidas, entre em contato através do Fale Conosco do site, 
 			 ou diretamente com os monitores na Praça do Conhecimento.</p>
 		</div>
@@ -226,7 +227,7 @@ $inscricao_bd = "";
 		 		<select id="sexo" name="sexo" size="1" required>
 		 			<option value="">Sexo</option>
 		 			<option value="M">Masculino</option>
-		 			<option value="F">Feminio</option>
+		 			<option value="F">Feminino</option>
 		 		</select><br>    	 		
 
 				<input id='endereco' name="endereco" class="input-xxlarge" type="text" placeholder="Endereço" required><br>
@@ -239,13 +240,13 @@ $inscricao_bd = "";
 
 		 		<h4>Contatos:</h4>
 
-				<input id='email' name="email" class="input-medium" type="text" placeholder="E-mail" required><span class="help-inline">Ex. nome@email.com.br</span><br>
+				<input id='email' name="email" class="input-xlarge" type="text" placeholder="E-mail" required><span class="help-inline">Ex. nome@email.com.br</span><br>
 
-    	 		<input id='tel_fixo' name="tel_fixo" class="input-medium" type="text" placeholder="Telefone fixo" required><span class="help-inline">Digite apenas os números. Ex.: 90901010</span><br>
+    	 		<input id='tel_fixo' name="tel_fixo" class="input-large" type="text" placeholder="Telefone fixo" required><span class="help-inline">Digite apenas os números. Ex.: 90901010</span><br>
 
-    	 		<input id='tel_cel' name="tel_cel" class="input-medium" type="text" placeholder="Celular" required><span class="help-inline">Digite apenas os números. Ex.: 90901010</span><br>
+    	 		<input id='tel_cel' name="tel_cel" class="input-large" type="text" placeholder="Celular" required><span class="help-inline">Digite apenas os números. Ex.: 90901010</span><br>
 
-    	 		<input id='tel_recado' name="tel_recado" class="input-medium" type="text" placeholder="Recados com..."><br>
+    	 		<input id='tel_recado' name="tel_recado" class="input-large" type="text" placeholder="Recados com..."><br>
 		 	
 
 		 	</div><!-- /dadosPessoais -->
@@ -258,15 +259,15 @@ $inscricao_bd = "";
 
 				<select id="escolaridade_periodo" name="escolaridade_periodo" required>
 					<option value="">Período</option>
-					<option value="fund_1">Cursando o 1º ano do ensio fundamental</option>
-					<option value="fund_2">Cursando o 2º ano do ensio fundamental</option>
-					<option value="fund_3">Cursando o 3º ano do ensio fundamental</option>
-					<option value="fund_4">Cursando o 4º ano do ensio fundamental</option>
-					<option value="fund_5">Cursando o 5º ano do ensio fundamental</option>
-					<option value="fund_6">Cursando o 6º ano do ensio fundamental</option>
-					<option value="fund_7">Cursando o 7º ano do ensio fundamental</option>
-					<option value="fund_8">Cursando o 8º ano do ensio fundamental</option>
-					<option value="fund_9">Cursando o 9º ano do ensio fundamental</option>
+					<option value="fund_1">Cursando o 1º ano do ensino fundamental</option>
+					<option value="fund_2">Cursando o 2º ano do ensino fundamental</option>
+					<option value="fund_3">Cursando o 3º ano do ensino fundamental</option>
+					<option value="fund_4">Cursando o 4º ano do ensino fundamental</option>
+					<option value="fund_5">Cursando o 5º ano do ensino fundamental</option>
+					<option value="fund_6">Cursando o 6º ano do ensino fundamental</option>
+					<option value="fund_7">Cursando o 7º ano do ensino fundamental</option>
+					<option value="fund_8">Cursando o 8º ano do ensino fundamental</option>
+					<option value="fund_9">Cursando o 9º ano do ensino fundamental</option>
 					<option value="fund_ok">Concluiu o ensino fundamental</option>
 					<option value="medio_1">Cursando o 1º ano do ensino médio</option>
 					<option value="medio_2">Cursando o 2º ano do ensino médio</option>
@@ -294,7 +295,7 @@ $inscricao_bd = "";
 
 				<p>
 				<label>Você acessa a Internet?</label>
-				<select id="internet" name="internet" required>
+				<select id="internet" name="internet">
 					<option value=""></option>
 					<option value="0">NÃO</option>
 					<option value="1">SIM</option>
@@ -303,7 +304,10 @@ $inscricao_bd = "";
 
 				<p>
 				<div id="internet_sim" style="display:none;">
-					<label>O que você faz na Internet?</label>					
+					<label>O que você faz na Internet?</label>
+					
+					<span class="help-block"><small>Dica: Você pode selecionar mais de um item segurando a tecla CTRL enquanto Clica.</small></span>
+
 					<select id="internet_acesso" name="internet_acesso" class="input-xlarge" multiple="multiple" size="13">
 						<option value="1">Jogar</option>
 						<option value="2">Pesquisar</option>
@@ -318,7 +322,7 @@ $inscricao_bd = "";
 						<option value="11">Trabalhar</option>
 						<option value="12">Orkut, Facebook ou outra rede social</option>
 						<option value="13">Outros</option>
-					</select><span class="help-inline"><small>Dica: Você pode selecionar mais de um item segurando a tecla CTRL enquanto Clica.</small></span><br>
+					</select><br>
 
 					<div id="internet_outro" style="display:none;">
 						<input id="internet_outro_opt" name="internet_outro_opt" class="input-xxlarge" type="text" placeholder="Especifique o que mais faz na Internet"><br>
@@ -336,7 +340,10 @@ $inscricao_bd = "";
 
 				<div id="conhecimentos_informatica">
 					<label>O que você conhece ou faz usando computadores?</label>
-					<select id="conhecimentos_info" name="conhecimentos_info" class="input-xxlarge" multiple="multiple" size="9" required>
+
+					<span class="help-block"><small>Dica: Você pode selecionar mais de um item segurando a tecla CTRL enquanto Clica.</small></span>
+
+					<select id="conhecimentos_info" name="conhecimentos_info" class="input-xxlarge" multiple="multiple" size="9">
 						<option value="1">Editor de textos (ex.: Word, BrOffice)</option>
 						<option value="2">Navegador (ex.: Internet Explorer, Firefox)</option>
 						<option value="3">Editor de imagens (ex.: Photoshop, Gimp)</option>
@@ -346,7 +353,7 @@ $inscricao_bd = "";
 						<option value="7">Instala computadores ou faz manutenção?</option>
 						<option value="8">Tem ou participa de blog ou site?</option>						
 						<option value="9">Outro...</option>
-					</select><span class="help-inline"><small>Dica: Você pode selecionar mais de um item segurando a tecla CTRL enquanto Clica.</small></span><br>
+					</select><br>
 					<div id="conhecimentos_info_outro" style="display:none;">
 						<input id="conhecimentos_info_opt_outro" name="conhecimentos_info_opt_outro" class="input-xxlarge" type="text" placeholder="Especifique o que mais faz"><br>
 					</div>							

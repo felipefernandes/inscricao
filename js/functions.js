@@ -2,6 +2,31 @@ $(document).ready(function() {
 
 	//$('input[placeholder], textarea[placeholder]').placeholder();
 
+	$('[placeholder]').focus(function() {
+	  var input = $(this);
+	  if (input.val() == input.attr('placeholder')) {
+	    input.val('');
+	    input.removeClass('placeholder');
+	  }
+	}).blur(function() {
+	  var input = $(this);
+	  if (input.val() == '' || input.val() == input.attr('placeholder')) {
+	    input.addClass('placeholder');
+	    input.val(input.attr('placeholder'));
+	  }
+	}).blur();
+
+
+	$('[placeholder]').parents('form').submit(function() {
+	  $(this).find('[placeholder]').each(function() {
+	    var input = $(this);
+	    if (input.val() == input.attr('placeholder')) {
+	      input.val('');
+	    }
+	  })
+	});
+
+
 	$("#curso_1opcao").bind("change", function () 
 	{
 		$("#turno1").slideDown(); //exibe opcoes de turno
@@ -15,6 +40,10 @@ $(document).ready(function() {
 	        	$('#curso_1opcao_turno').append($('<option>', { value: '1', text: 'Manhã (8h30 às 12h) - 3ª e 5ª feiras' }));
 	        	$('#curso_1opcao_turno').append($('<option>', { value: '2', text: 'Tarde (14h às 17h30) - 3ª e 5ª feiras' })); 							
 				$('#curso_1opcao_turno').append($('<option>', { value: '3', text: 'Noite (18h às 20h30) - 4ª e 6ª feiras' }));
+
+				$('#conhecimentos').slideDown();
+				$('#conhecimentos_especificos').slideDown();
+
 				break;
 
 			case "IB" :
@@ -24,15 +53,26 @@ $(document).ready(function() {
 				$('#curso_1opcao_turno').append($('<option>', { value: '4', text: 'Tarde (14h às 15h30) - 4ª e 6ª feiras' }));
 				$('#curso_1opcao_turno').append($('<option>', { value: '5', text: 'Tarde (16h às 17h30) - 4ª e 6ª feiras' }));
 				$('#curso_1opcao_turno').append($('<option>', { value: '7', text: 'Noite (18h às 19h30) - 3ª e 5ª feiras' }));
+
+				$('#conhecimentos').slideUp();
+				$('#conhecimentos_especificos').slideUp();
+
 				break;
 
 			default :
 				removeItensCurso1();
 
-	        	$('#curso_1opcao_turno').append($('<option>', { value: '1', text: 'Manhã (8h30 às 12h) - 3ª e 5ª feiras' }));
-	        	$('#curso_1opcao_turno').append($('<option>', { value: '2', text: 'Tarde (14h às 17h30) - 3ª e 5ª feiras' }));
-	        	$('#curso_1opcao_turno').append($('<option>', { value: '8', text: 'Manhã (8h30 às 12h) - 4ª e 6ª feiras' }));
-	        	$('#curso_1opcao_turno').append($('<option>', { value: '9', text: 'Tarde (14h às 17h30) - 4ª e 6ª feiras' }));	        	
+				if (opcao === "AD" || opcao === "WD" || opcao === "DG") {
+					$('#curso_1opcao_turno').append($('<option>', { value: '8', text: 'Manhã (8h30 às 12h) - 4ª e 6ª feiras' }));
+		        	$('#curso_1opcao_turno').append($('<option>', { value: '9', text: 'Tarde (14h às 17h30) - 4ª e 6ª feiras' }));	
+				} 
+				else {
+		        	$('#curso_1opcao_turno').append($('<option>', { value: '1', text: 'Manhã (8h30 às 12h) - 3ª e 5ª feiras' }));
+		        	$('#curso_1opcao_turno').append($('<option>', { value: '2', text: 'Tarde (14h às 17h30) - 3ª e 5ª feiras' }));
+				}	        
+
+	        	$('#conhecimentos').slideDown();
+	        	$('#conhecimentos_especificos').slideDown();        	
 		}
 	});
 
@@ -41,7 +81,11 @@ $(document).ready(function() {
 		$("#curso_1opcao_turno option[value='2']").remove(); //remove
 		$("#curso_1opcao_turno option[value='3']").remove(); //remove
 		$("#curso_1opcao_turno option[value='4']").remove(); //remove
-		$("#curso_1opcao_turno option[value='5']").remove(); //remove		
+		$("#curso_1opcao_turno option[value='5']").remove(); //remove
+		$("#curso_1opcao_turno option[value='6']").remove(); //remove
+		$("#curso_1opcao_turno option[value='7']").remove(); //remove
+		$("#curso_1opcao_turno option[value='8']").remove(); //remove
+		$("#curso_1opcao_turno option[value='9']").remove(); //remove				
 	}
 
 
@@ -53,7 +97,7 @@ $(document).ready(function() {
 
 		switch(opcao) {
 			case "TI" :
-				removeItensCurso1();				
+				removeItensCurso2();				
 
 	        	$('#curso_2opcao_turno').append($('<option>', { value: '1', text: 'Manhã (8h30 às 12h) - 3ª e 5ª feiras' }));
 	        	$('#curso_2opcao_turno').append($('<option>', { value: '2', text: 'Tarde (14h às 17h30) - 3ª e 5ª feiras' })); 							
@@ -61,7 +105,7 @@ $(document).ready(function() {
 				break;
 
 			case "IB" :
-				removeItensCurso1();
+				removeItensCurso2();
 
 				$('#curso_2opcao_turno').append($('<option>', { value: '6', text: 'Manhã (10h às 11h30) - 4ª e 6ª feiras' }));
 				$('#curso_2opcao_turno').append($('<option>', { value: '4', text: 'Tarde (14h às 15h30) - 4ª e 6ª feiras' }));
@@ -70,13 +114,19 @@ $(document).ready(function() {
 				break;
 
 			default :
-				removeItensCurso1();
+				removeItensCurso2();
 
-	        	$('#curso_2opcao_turno').append($('<option>', { value: '1', text: 'Manhã (8h30 às 12h) - 3ª e 5ª feiras' }));
-	        	$('#curso_2opcao_turno').append($('<option>', { value: '2', text: 'Tarde (14h às 17h30) - 3ª e 5ª feiras' }));
-	        	$('#curso_2opcao_turno').append($('<option>', { value: '8', text: 'Manhã (8h30 às 12h) - 4ª e 6ª feiras' }));
-	        	$('#curso_2opcao_turno').append($('<option>', { value: '9', text: 'Tarde (14h às 17h30) - 4ª e 6ª feiras' }));	        	
+				if (opcao === "AD" || opcao === "WD" || opcao === "DG") {
+					$('#curso_2opcao_turno').append($('<option>', { value: '8', text: 'Manhã (8h30 às 12h) - 4ª e 6ª feiras' }));
+		        	$('#curso_2opcao_turno').append($('<option>', { value: '9', text: 'Tarde (14h às 17h30) - 4ª e 6ª feiras' }));	
+				} 
+				else {
+		        	$('#curso_2opcao_turno').append($('<option>', { value: '1', text: 'Manhã (8h30 às 12h) - 3ª e 5ª feiras' }));
+		        	$('#curso_2opcao_turno').append($('<option>', { value: '2', text: 'Tarde (14h às 17h30) - 3ª e 5ª feiras' }));
+				}	        
 
+	        	$('#conhecimentos').slideDown();
+	        	$('#conhecimentos_especificos').slideDown(); 
 		}
 
         if ($(this).val() == $("#curso_1opcao").val()) {
@@ -209,9 +259,7 @@ $(document).ready(function() {
 
     // ENVIA O FORMULARIO
     $("#formularioInscricao").submit(function() {
-
-		alert("formEnviado!");
-    	
+		//alert("formEnviado!");    	
     });
 
     
