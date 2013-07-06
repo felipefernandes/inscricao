@@ -56,13 +56,17 @@ $inscricao_bd = "";
 
 		<?php if ($inscricao_status): ?>
 
-		<p>Os cursos da Praça do Conhecimento têm como objetivo a formação de jovens e adultos em linguagens multimídia e o seu desenvolvimento pessoal, social, técnico, artístico e profissional. Com exceção do curso de Informática Básica, que não possui critérios de idade e escolaridade, todos os outros cursos são para maiores de 14 anos e com nível de escolaridade igual ou superior ao 9º ano do Ensino Fundamental.
+		<p>Os cursos da Praça do Conhecimento de Nova Brasília têm como objetivo a formação de jovens e adultos em linguagens multimídia e o seu desenvolvimento pessoal, social, técnico, artístico e profissional. Com exceção do curso de Informática Básica, que não possui critérios de idade e escolaridade, todos os outros cursos são para maiores de 14 anos e com nível de escolaridade igual ou superior ao 9º ano do Ensino Fundamental.
 		Os cursos acontecem duas vezes por semana, durante quatro meses e meio, nos dias e turnos descritos abaixo.</p>
 
-		<table class="table table-striped">
+		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
+					<th>2ª e 4ª feira</th>
+					<th>Turnos</th>
 					<th>3ª e 5ª feiras</th>
+					<th>Turnos</th>
+					<th>5ª feira</th>					
 					<th>Turnos</th>
 					<th>4ª e 6ª feiras</th>
 					<th>Turnos</th>				
@@ -70,42 +74,62 @@ $inscricao_bd = "";
 			</thead>
 			<tbody>
 				<tr>
+					<td>Informática Básica</td>
+					<td>Manhã e Tarde</td>
 					<td>Computação Gráfica</td>
 					<td>Manhã e Tarde</td>
+					<td>TV Comunitária e <br>Comunicação Popular</td>
+					<td>Tarde</td>
 					<td>Design Gráfico</td>
 					<td>Manhã e Tarde</td>
 				</tr>
 				<tr>
+					<td></td>
+					<td></td>					
 					<td>Fotografia</td>
 					<td>Manhã e Tarde</td>
+					<td></td>
+					<td></td>
 					<td>Web Design</td>
 					<td>Manhã e Tarde</td>
 				</tr>
 				<tr>
+					<td></td>
+					<td></td>					
 					<td>Vídeo</td>
 					<td>Manhã e Tarde</td>
+					<td></td>
+					<td></td>
 					<td>Áudio Digital</td>
 					<td>Manhã e Tarde</td>
 				</tr>
 				<tr>
+					<td></td>
+					<td></td>					
 					<td>Tecnologia da Informação</td>
 					<td>Manhã e Tarde</td>
+					<td></td>
+					<td></td>
 					<td>Tecnologia da Informação</td>
 					<td>Noite</td>
 				</tr>				
 				<tr>
+					<td></td>
+					<td></td>					
 					<td>Informática Básica</td>
 					<td>Noite</td>
-					<td>Informática Básica</td>
-					<td>Manhã e Tarde</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 			</tbody>
 		</table>
 
-		<p>As vagas dos cursos serão preenchidas mediante sorteios realizados no dia <strong>17/07/2013</strong>, 
+		<p>As vagas dos cursos serão preenchidas mediante sorteios realizados no dia <strong>23/07/2013</strong>, 
 			nos horários indicados na tabela abaixo. Os sorteios serão abertos ao público.</p>
 
-		<table class="table table-striped">
+		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
 					<th>Cursos</th>
@@ -180,7 +204,8 @@ $inscricao_bd = "";
 	    	 		<option value="VI">Vídeo</option>
 	    	 		<option value="IB">Informática Básica</option>
 	    	 		<option value="TI">Tecnologia da Informação</option>
-	    	 		<option value="WD">Web Design</option>
+	    	 		<option value="TV">TV Comunitária e Comunicação Popular</option>
+	    	 		<option value="WD">Web Design</option>	    	 		
 	    	 	</select>
 
 	    	 	<div id="turno1" style="display:none;">
@@ -199,6 +224,7 @@ $inscricao_bd = "";
 	    	 		<option value="VI">Vídeo</option>
 	    	 		<option value="IB">Informática Básica</option>
 	    	 		<option value="TI">Tecnologia da Informação</option>
+	    	 		<option value="TV">TV Comunitária e Comunicação Popular</option>
 	    	 		<option value="WD">Web Design</option>
 	    	 	</select>
 
@@ -259,14 +285,6 @@ $inscricao_bd = "";
 
 				<select id="escolaridade_periodo" name="escolaridade_periodo" required>
 					<option value="">Período</option>
-					<option value="fund_1">Cursando o 1º ano do ensino fundamental</option>
-					<option value="fund_2">Cursando o 2º ano do ensino fundamental</option>
-					<option value="fund_3">Cursando o 3º ano do ensino fundamental</option>
-					<option value="fund_4">Cursando o 4º ano do ensino fundamental</option>
-					<option value="fund_5">Cursando o 5º ano do ensino fundamental</option>
-					<option value="fund_6">Cursando o 6º ano do ensino fundamental</option>
-					<option value="fund_7">Cursando o 7º ano do ensino fundamental</option>
-					<option value="fund_8">Cursando o 8º ano do ensino fundamental</option>
 					<option value="fund_9">Cursando o 9º ano do ensino fundamental</option>
 					<option value="fund_ok">Concluiu o ensino fundamental</option>
 					<option value="medio_1">Cursando o 1º ano do ensino médio</option>

@@ -17,6 +17,7 @@ switch ($curso1) {
   case 'TI': $curso1 = "Tecnologia da Informação"; break;
   case 'VI': $curso1 = "Vídeo"; break;  
   case 'WD': $curso1 = "Web Design"; break;
+  case 'TV': $curso1 = "TV Comunitária e Comunicação Popular"; break;
 }
 
 switch ($curso2) {
@@ -28,30 +29,40 @@ switch ($curso2) {
   case 'TI': $curso2 = "Tecnologia da Informação"; break;
   case 'VI': $curso2 = "Vídeo"; break;  
   case 'WD': $curso2 = "Web Design"; break;
+  case 'TV': $curso2 = "TV Comunitária e Comunicação Popular"; break;
 }
 
 switch ($curso1_turno) {
-  case '1': $curso1_turno = "Manhã (8h30 às 12h) - 3ª e 5ª feiras"; break;
-  case '2': $curso1_turno = "Tarde (14h às 17h30) - 3ª e 5ª feiras"; break;
+  case '1': $curso1_turno = "Manhã (8h30 às 12h) - 3ª e 5ª feiras"; break;  //curso regular
+  case '2': $curso1_turno = "Tarde (14h às 17h30) - 3ª e 5ª feiras"; break; //curso regular
   case '3': $curso1_turno = "Noite (18h às 20h30) - 4ª e 6ª feiras"; break;
-  case '4': $curso1_turno = "Tarde (14h às 15h30) - 4ª e 6ª feiras"; break;
+  case '4': $curso1_turno = "Manhã (10h15 às 11h15) - 2ª e 4ª feiras"; break;  //ib
   case '5': $curso1_turno = "Tarde (16h às 17h30) - 4ª e 6ª feiras"; break;
-  case '6': $curso1_turno = "Manhã (10h às 11h30) - 4ª e 6ª feiras"; break;
+  case '6': $curso1_turno = "Manhã (8h30 às 10h) - 2ª e 4ª feiras"; break;     //ib
   case '7': $curso1_turno = "Noite (18h às 19h30) - 3ª e 5ª feiras"; break;
   case '8': $curso1_turno = "Manhã (8h30 às 12h) - 4ª e 6ª feiras"; break;
   case '9': $curso1_turno = "Tarde (14h às 17h30) - 4ª e 6ª feiras"; break;
+  case '10': $curso1_turno = "Tarde (17h às 18h30) - 5ª feiras"; break;       
+  case '11': $curso1_turno = "Tarde (13h às 14h30) - 2ª e 4ª feiras"; break;   //ib
+  case '12': $curso1_turno = "Tarde (14h40 às 16h10) - 2ª e 4ª feiras"; break; //ib
+  case '13': $curso1_turno = "Tarde (16h15 às 17h45) - 2ª e 4ª feiras"; break; //ib
 }
 
 switch ($curso2_turno) {
-  case '1': $curso2_turno = "Manhã (8h30 às 12h) - 3ª e 5ª feiras"; break;
-  case '2': $curso2_turno = "Tarde (14h às 17h30) - 3ª e 5ª feiras"; break;
+  case '1': $curso2_turno = "Manhã (8h30 às 12h) - 3ª e 5ª feiras"; break;  //curso regular
+  case '1': $curso2_turno = "Manhã (8h30 às 12h) - 3ª e 5ª feiras"; break;  //curso regular
+  case '2': $curso2_turno = "Tarde (14h às 17h30) - 3ª e 5ª feiras"; break; //curso regular
   case '3': $curso2_turno = "Noite (18h às 20h30) - 4ª e 6ª feiras"; break;
-  case '4': $curso2_turno = "Tarde (14h às 15h30) - 4ª e 6ª feiras"; break;
+  case '4': $curso2_turno = "Manhã (10h15 às 11h15) - 2ª e 4ª feiras"; break;  //ib
   case '5': $curso2_turno = "Tarde (16h às 17h30) - 4ª e 6ª feiras"; break;
-  case '6': $curso2_turno = "Manhã (10h às 11h30) - 4ª e 6ª feiras"; break;
+  case '6': $curso2_turno = "Manhã (8h30 às 10h) - 2ª e 4ª feiras"; break;     //ib
   case '7': $curso2_turno = "Noite (18h às 19h30) - 3ª e 5ª feiras"; break;
   case '8': $curso2_turno = "Manhã (8h30 às 12h) - 4ª e 6ª feiras"; break;
   case '9': $curso2_turno = "Tarde (14h às 17h30) - 4ª e 6ª feiras"; break;
+  case '10': $curso2_turno = "Tarde (17h às 18h30) - 5ª feiras"; break;       
+  case '11': $curso2_turno = "Tarde (13h às 14h30) - 2ª e 4ª feiras"; break;   //ib
+  case '12': $curso2_turno = "Tarde (14h40 às 16h10) - 2ª e 4ª feiras"; break; //ib
+  case '13': $curso2_turno = "Tarde (16h15 às 17h45) - 2ª e 4ª feiras"; break; //ib
 }
 
 ?>
@@ -114,7 +125,7 @@ switch ($curso2_turno) {
     <p>Curso (opção 2): <b><?php echo $curso2; ?></b> (<?php echo $curso2_turno; ?>)</p>
     <hr>
     <div class="well well-large">
-      <h4>Anote estas informações geradas ou imprima esta página e apresente no dia da matricula.</h4>
+      <h4>Anote estas informações geradas ou imprima esta página e apresente no dia da matricula, caso seja sorteado.</h4>
       <p>Em caso de dúvidas, entre em contato através do Fale Conosco do site, ou diretamente com os monitores na Praça do Conhecimento.</p>
     </div>
     <hr>
