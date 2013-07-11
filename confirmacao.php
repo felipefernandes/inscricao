@@ -46,6 +46,8 @@ switch ($curso1_turno) {
   case '11': $curso1_turno = "Tarde (13h às 14h30) - 2ª e 4ª feiras"; break;   //ib
   case '12': $curso1_turno = "Tarde (14h40 às 16h10) - 2ª e 4ª feiras"; break; //ib
   case '13': $curso1_turno = "Tarde (16h15 às 17h45) - 2ª e 4ª feiras"; break; //ib
+  case '14': $curso1_turno = "Manhã (8h30 às 12h) - Sábados"; break; //vídeo
+  case '15': $curso1_turno = "Tarde (14h às 17h30) - Sábados"; break; //vídeo
 }
 
 switch ($curso2_turno) {
@@ -63,6 +65,8 @@ switch ($curso2_turno) {
   case '11': $curso2_turno = "Tarde (13h às 14h30) - 2ª e 4ª feiras"; break;   //ib
   case '12': $curso2_turno = "Tarde (14h40 às 16h10) - 2ª e 4ª feiras"; break; //ib
   case '13': $curso2_turno = "Tarde (16h15 às 17h45) - 2ª e 4ª feiras"; break; //ib
+  case '14': $curso2_turno = "Manhã (8h30 às 12h) - Sábados"; break; //vídeo
+  case '15': $curso2_turno = "Tarde (14h às 17h30) - Sábados"; break; //vídeo  
 }
 
 ?>

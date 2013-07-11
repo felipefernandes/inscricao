@@ -3,6 +3,7 @@
 /* Definições */
 $inscricao_status = false;
 $inscricao_exercicio = "2013.2";
+$senha = "ComplexoAlema0@2013";
 
 //header('Content-Type: text/html; charset=utf-8');
 /*$host     = 'localhost';

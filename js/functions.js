@@ -38,6 +38,9 @@ $(document).ready(function() {
 				removeItensCurso1();
 				$('#curso_1opcao_turno').append($('<option>', { value: '10', text: 'Tarde (17h às 18h30) - 5ª feiras' })); 							
 
+				$('#conhecimentos').slideUp();
+				$('#conhecimentos_especificos').slideUp();
+
 				break;
 
 			case "TI" :
@@ -64,6 +67,19 @@ $(document).ready(function() {
 
 				$('#conhecimentos').slideUp();
 				$('#conhecimentos_especificos').slideUp();
+
+				break;
+
+			case "VI" :
+
+	        	$('#curso_1opcao_turno').append($('<option>', { value: '1', text: 'Manhã (8h30 às 12h) - 3ª e 5ª feiras' }));
+	        	$('#curso_1opcao_turno').append($('<option>', { value: '2', text: 'Tarde (14h às 17h30) - 3ª e 5ª feiras' }));				
+
+	        	$('#curso_1opcao_turno').append($('<option>', { value: '14', text: 'Manhã (8h30 às 12h) - sábados' }));
+	        	$('#curso_1opcao_turno').append($('<option>', { value: '15', text: 'Tarde (14h às 17h30) - sábados' }));
+
+	        	$('#conhecimentos').slideDown();
+	        	$('#conhecimentos_especificos').slideDown();
 
 				break;
 
@@ -98,6 +114,8 @@ $(document).ready(function() {
 		$("#curso_1opcao_turno option[value='11']").remove(); //remove
 		$("#curso_1opcao_turno option[value='12']").remove(); //remove
 		$("#curso_1opcao_turno option[value='13']").remove(); //remove	
+		$("#curso_1opcao_turno option[value='14']").remove(); //remove	
+		$("#curso_1opcao_turno option[value='15']").remove(); //remove	
 	}
 
 
@@ -112,6 +130,9 @@ $(document).ready(function() {
 				removeItensCurso2();
 				$('#curso_2opcao_turno').append($('<option>', { value: '10', text: 'Tarde (17h às 18h30) - 5ª feiras' })); 							
 
+				$('#conhecimentos').slideUp();
+				$('#conhecimentos_especificos').slideUp();
+
 				break;
 
 			case "TI" :
@@ -125,17 +146,26 @@ $(document).ready(function() {
 			case "IB" :
 				removeItensCurso2();
 
-/*				$('#curso_2opcao_turno').append($('<option>', { value: '6', text: 'Manhã (10h às 11h30) - 4ª e 6ª feiras' }));
-				$('#curso_2opcao_turno').append($('<option>', { value: '4', text: 'Tarde (14h às 15h30) - 4ª e 6ª feiras' }));
-				$('#curso_2opcao_turno').append($('<option>', { value: '5', text: 'Tarde (16h às 17h30) - 4ª e 6ª feiras' }));
-				$('#curso_2opcao_turno').append($('<option>', { value: '7', text: 'Noite (18h às 19h30) - 3ª e 5ª feiras' }));*/
-
 				$('#curso_2opcao_turno').append($('<option>', { value: '6',  text: 'Manhã (8h30 às 10h) - 2ª e 4ª feiras' }));
 				$('#curso_2opcao_turno').append($('<option>', { value: '4',  text: 'Manhã (10h15 às 11h45) - 2ª e 4ª feiras' }));
 				$('#curso_2opcao_turno').append($('<option>', { value: '11', text: 'Tarde (13h às 14h30) - 2ª e 4ª feiras' }));
 				$('#curso_2opcao_turno').append($('<option>', { value: '12', text: 'Tarde (14h40 às 16h10) - 2ª e 4ª feiras' }));
 				$('#curso_2opcao_turno').append($('<option>', { value: '13', text: 'Tarde (16h15 às 17h45) - 2ª e 4ª feiras' }));
 				$('#curso_2opcao_turno').append($('<option>', { value: '7',  text: 'Noite (18h às 19h30) - 3ª e 5ª feiras' }));
+
+				break;
+
+
+			case "VI" :
+
+	        	$('#curso_2opcao_turno').append($('<option>', { value: '1', text: 'Manhã (8h30 às 12h) - 3ª e 5ª feiras' }));
+	        	$('#curso_2opcao_turno').append($('<option>', { value: '2', text: 'Tarde (14h às 17h30) - 3ª e 5ª feiras' }));				
+
+	        	$('#curso_2opcao_turno').append($('<option>', { value: '14', text: 'Manhã (8h30 às 12h) - sábados' }));
+	        	$('#curso_2opcao_turno').append($('<option>', { value: '15', text: 'Tarde (14h às 17h30) - sábados' }));
+
+	        	$('#conhecimentos').slideDown();
+	        	$('#conhecimentos_especificos').slideDown();
 
 				break;
 
@@ -178,6 +208,8 @@ $(document).ready(function() {
 		$("#curso_2opcao_turno option[value='11']").remove(); //remove
 		$("#curso_2opcao_turno option[value='12']").remove(); //remove
 		$("#curso_2opcao_turno option[value='13']").remove(); //remove
+		$("#curso_2opcao_turno option[value='14']").remove(); //remove
+		$("#curso_2opcao_turno option[value='15']").remove(); //remove
 	}
 
 

@@ -56,7 +56,7 @@ $inscricao_bd = "";
 
 		<?php if ($inscricao_status): ?>
 
-		<p>Os cursos da Praça do Conhecimento de Nova Brasília têm como objetivo a formação de jovens e adultos em linguagens multimídia e o seu desenvolvimento pessoal, social, técnico, artístico e profissional. Com exceção do curso de Informática Básica, que não possui critérios de idade e escolaridade, todos os outros cursos são para maiores de 14 anos e com nível de escolaridade igual ou superior ao 9º ano do Ensino Fundamental.
+		<p>Os cursos da Praça do Conhecimento de Nova Brasília têm como objetivo a formação de jovens e adultos em linguagens multimídia e o seu desenvolvimento pessoal, social, técnico, artístico e profissional. Com exceção dos cursos de Informática Básica e TV Comunitária e Comunicação Popular, que não possui critérios de idade e escolaridade, todos os outros cursos são para maiores de 14 anos e com nível de escolaridade igual ou superior ao 9º ano do Ensino Fundamental.
 		Os cursos acontecem duas vezes por semana, durante quatro meses e meio, nos dias e turnos descritos abaixo.</p>
 
 		<table class="table table-striped table-bordered">
@@ -69,7 +69,9 @@ $inscricao_bd = "";
 					<th>5ª feira</th>					
 					<th>Turnos</th>
 					<th>4ª e 6ª feiras</th>
-					<th>Turnos</th>				
+					<th>Turnos</th>	
+					<th>Sábados</th>
+					<th>Turnos</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -82,6 +84,8 @@ $inscricao_bd = "";
 					<td>Tarde</td>
 					<td>Design Gráfico</td>
 					<td>Manhã e Tarde</td>
+					<td>Vídeo</td>
+					<td>Manhã e Tarde</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -92,6 +96,8 @@ $inscricao_bd = "";
 					<td></td>
 					<td>Web Design</td>
 					<td>Manhã e Tarde</td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td></td>
@@ -102,6 +108,8 @@ $inscricao_bd = "";
 					<td></td>
 					<td>Áudio Digital</td>
 					<td>Manhã e Tarde</td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td></td>
@@ -112,6 +120,8 @@ $inscricao_bd = "";
 					<td></td>
 					<td>Tecnologia da Informação</td>
 					<td>Noite</td>
+					<td></td>
+					<td></td>
 				</tr>				
 				<tr>
 					<td></td>
@@ -122,11 +132,13 @@ $inscricao_bd = "";
 					<td></td>
 					<td></td>
 					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 			</tbody>
 		</table>
 
-		<p>As vagas dos cursos serão preenchidas mediante sorteios realizados no dia <strong>23/07/2013</strong>, 
+		<p>As vagas dos cursos serão preenchidas mediante sorteios realizados no dia <strong>24/07/2013</strong>, 
 			nos horários indicados na tabela abaixo. Os sorteios serão abertos ao público.</p>
 
 		<table class="table table-striped table-bordered">
@@ -168,7 +180,11 @@ $inscricao_bd = "";
 				<tr>					
 					<td>Informática Básica</td>
 					<td>17h</td>
-				</tr>				
+				</tr>		
+				<tr>
+					<td>TV Comunitária e TV Popular</td>
+					<td>17h45</td>
+				</tr>		
 			</tbody>
 		</table>
 
