@@ -66,8 +66,6 @@ $inscricao_bd = "";
 					<th>Turnos</th>
 					<th>3ª e 5ª feiras</th>
 					<th>Turnos</th>
-					<th>5ª feira</th>					
-					<th>Turnos</th>
 					<th>4ª e 6ª feiras</th>
 					<th>Turnos</th>	
 					<th>Sábados</th>
@@ -80,8 +78,6 @@ $inscricao_bd = "";
 					<td>Manhã e Tarde</td>
 					<td>Computação Gráfica</td>
 					<td>Manhã e Tarde</td>
-					<td>TV Comunitária e <br>Comunicação Popular</td>
-					<td>Tarde</td>
 					<td>Design Gráfico</td>
 					<td>Manhã e Tarde</td>
 					<td>Vídeo</td>
@@ -92,8 +88,6 @@ $inscricao_bd = "";
 					<td></td>					
 					<td>Fotografia</td>
 					<td>Manhã e Tarde</td>
-					<td></td>
-					<td></td>
 					<td>Web Design</td>
 					<td>Manhã e Tarde</td>
 					<td></td>
@@ -104,8 +98,6 @@ $inscricao_bd = "";
 					<td></td>					
 					<td>Vídeo</td>
 					<td>Manhã e Tarde</td>
-					<td></td>
-					<td></td>
 					<td>Áudio Digital</td>
 					<td>Manhã e Tarde</td>
 					<td></td>
@@ -116,8 +108,6 @@ $inscricao_bd = "";
 					<td></td>					
 					<td>Tecnologia da Informação</td>
 					<td>Manhã e Tarde</td>
-					<td></td>
-					<td></td>
 					<td>Tecnologia da Informação</td>
 					<td>Noite</td>
 					<td></td>
@@ -132,8 +122,16 @@ $inscricao_bd = "";
 					<td></td>
 					<td></td>
 					<td></td>
+				</tr>
+				<tr>
 					<td></td>
 					<td></td>
+					<td>TV Comunitária e <br>Comunicação Popular</td>
+					<td>Tarde</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
 				</tr>
 			</tbody>
 		</table>

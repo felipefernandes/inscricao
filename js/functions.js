@@ -36,7 +36,7 @@ $(document).ready(function() {
 		switch(opcao) {
 			case "TV" :
 				removeItensCurso1();
-				$('#curso_1opcao_turno').append($('<option>', { value: '10', text: 'Tarde (17h às 18h30) - 5ª feiras' })); 							
+				$('#curso_1opcao_turno').append($('<option>', { value: '10', text: 'Tarde (17h às 18h30) - 3ª feiras' })); 							
 
 				$('#conhecimentos').slideUp();
 				$('#conhecimentos_especificos').slideUp();
@@ -128,7 +128,7 @@ $(document).ready(function() {
 		switch(opcao) {
 			case "TV" :
 				removeItensCurso2();
-				$('#curso_2opcao_turno').append($('<option>', { value: '10', text: 'Tarde (17h às 18h30) - 5ª feiras' })); 							
+				$('#curso_2opcao_turno').append($('<option>', { value: '10', text: 'Tarde (17h às 18h30) - 3ª feiras' })); 							
 
 				$('#conhecimentos').slideUp();
 				$('#conhecimentos_especificos').slideUp();
