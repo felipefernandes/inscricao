@@ -35,14 +35,14 @@ switch ($curso2) {
 switch ($curso1_turno) {
   case '1': $curso1_turno = "Manhã (8h30 às 12h) - 3ª e 5ª feiras"; break;  //curso regular
   case '2': $curso1_turno = "Tarde (14h às 17h30) - 3ª e 5ª feiras"; break; //curso regular
-  case '3': $curso1_turno = "Noite (18h às 20h30) - 4ª e 6ª feiras"; break;
+  case '3': $curso1_turno = "Noite (18h às 20h30) - 4ª e 6ª feiras"; break; //TI
   case '4': $curso1_turno = "Manhã (10h15 às 11h15) - 2ª e 4ª feiras"; break;  //ib
   case '5': $curso1_turno = "Tarde (16h às 17h30) - 4ª e 6ª feiras"; break;
   case '6': $curso1_turno = "Manhã (8h30 às 10h) - 2ª e 4ª feiras"; break;     //ib
   case '7': $curso1_turno = "Noite (18h às 19h30) - 3ª e 5ª feiras"; break;
-  case '8': $curso1_turno = "Manhã (8h30 às 12h) - 4ª e 6ª feiras"; break;
-  case '9': $curso1_turno = "Tarde (14h às 17h30) - 4ª e 6ª feiras"; break;
-  case '10': $curso1_turno = "Tarde (17h às 18h30) - 3ª feiras"; break;       
+  case '8': $curso1_turno = "Manhã (8h30 às 12h) - 4ª e 6ª feiras"; break;  //curso regular
+  case '9': $curso1_turno = "Tarde (14h às 17h30) - 4ª e 6ª feiras"; break; //curso regular
+  case '10': $curso1_turno = "Tarde (17h às 18h30) - 3ª feiras"; break;     // TV    
   case '11': $curso1_turno = "Tarde (13h às 14h30) - 2ª e 4ª feiras"; break;   //ib
   case '12': $curso1_turno = "Tarde (14h40 às 16h10) - 2ª e 4ª feiras"; break; //ib
   case '13': $curso1_turno = "Tarde (16h15 às 17h45) - 2ª e 4ª feiras"; break; //ib

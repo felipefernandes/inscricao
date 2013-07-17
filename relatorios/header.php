@@ -25,6 +25,7 @@ include_once('db.php');
       	width: 320px;
       }
     </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><!-- jQuery -->
     <script type="text/JavaScript">
 	<!--
 	function timedRefresh(timeoutPeriod) {
