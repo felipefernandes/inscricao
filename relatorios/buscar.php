@@ -13,7 +13,7 @@ $total_registros = mysql_num_rows($consulta);
 ?>	
 <div class="container">
 	
-	<div class="well hidden-print">
+	<div class="well">
 		<h1>Inscrições <small>Relatórios (busca)</small></h1>
 	</div>	
 
