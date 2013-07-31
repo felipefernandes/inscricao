@@ -40,7 +40,7 @@ include_once('db.php');
 </head>
 
 <body>
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top hidden-print">
 	<div class="navbar-inner">    	
     	<ul class="nav">
       		<li class="active"><a href="index.php">Geral</a></li>
