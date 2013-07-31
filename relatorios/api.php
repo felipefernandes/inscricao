@@ -1,6 +1,6 @@
 <?php 
 /**
- *	Api para fazer checar estados dos inscritos
+ *	Api para checar ou setar estados dos inscritos
  *
  */
 
@@ -25,8 +25,10 @@ if ( $id ) {
 	if ( $acao == "set") {	
 	/**
 	 * 	Marca como ativo ou inativo (sorteado ou não sorteado) a partir do ID
-	 *	acao: check
-	 *	param: ?ativo= (1||0)
+	 *
+	 *	acao: set
+	 *	param: ID, Code (1||0)
+	 *	Return: true ou false
 	 */
 		$code = ( isset( $_GET['code'] ) ) ? $_GET['code'] : 'vazio'; //pega o valor da url
 		
