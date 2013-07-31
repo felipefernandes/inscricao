@@ -24,6 +24,12 @@ include_once('db.php');
       select {
       	width: 320px;
       }
+      .popup {
+      	width: auto;
+      	position: absolute;
+      	right: 0px;
+      }
+
     </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><!-- jQuery -->
     <script type="text/JavaScript">
@@ -64,6 +70,16 @@ include_once('db.php');
 					<?php endwhile; ?>
       			</ul>
       		</li>
+      		<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorteados por curso<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<?php 
+					$rCursos = mysql_query("SELECT * FROM cursos ORDER BY curso", $conexao) or die (mysql_error());
+					while ($dados = mysql_fetch_array($rCursos)) : ?>
+					<li><a href="sorteados.php?c=<?php echo $dados['id']; ?>"><?php echo $dados['curso']; ?></a></li>
+					<?php endwhile; ?>
+				</ul>
+      		</li>      		      		
 			<form class="navbar-search pull-right" action="buscar.php">				
 			  <input type="text" name="id" class="search-query" placeholder="Buscar inscrição">			  
 			  <span class="add-on"><i class="icon-search"></i></span>
