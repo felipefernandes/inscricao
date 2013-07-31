@@ -138,6 +138,11 @@ textarea {
 }
 
 @media print {
+
+  .hidden-print {
+    display: none !important;
+  }
+
   * {
     color: #000 !important;
     text-shadow: none !important;
