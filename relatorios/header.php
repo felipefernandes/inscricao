@@ -64,7 +64,10 @@ include_once('db.php');
 					<?php endwhile; ?>
       			</ul>
       		</li>
-      		<li class="disabled"><a href="#">Completo</a></li>
+			<form class="navbar-search pull-right" action="buscar.php">				
+			  <input type="text" name="id" class="search-query" placeholder="Buscar inscrição">			  
+			  <span class="add-on"><i class="icon-search"></i></span>
+			</form>
     	</ul>
   	</div>
 </div>
