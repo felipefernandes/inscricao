@@ -62,8 +62,7 @@ $(document).ready(function() {
 				$('#curso_1opcao_turno').append($('<option>', { value: '4',  text: 'Manhã (10h15 às 11h45) - 2ª e 4ª feiras' }));
 				$('#curso_1opcao_turno').append($('<option>', { value: '11', text: 'Tarde (13h às 14h30) - 2ª e 4ª feiras' }));
 				$('#curso_1opcao_turno').append($('<option>', { value: '12', text: 'Tarde (14h40 às 16h10) - 2ª e 4ª feiras' }));
-				$('#curso_1opcao_turno').append($('<option>', { value: '13', text: 'Tarde (16h15 às 17h45) - 2ª e 4ª feiras' }));
-				$('#curso_1opcao_turno').append($('<option>', { value: '7',  text: 'Noite (18h às 19h30) - 3ª e 5ª feiras' }));
+				$('#curso_1opcao_turno').append($('<option>', { value: '13', text: 'Tarde (16h15 às 17h45) - 2ª e 4ª feiras' }));				
 
 				$('#conhecimentos').slideUp();
 				$('#conhecimentos_especificos').slideUp();
@@ -83,10 +82,20 @@ $(document).ready(function() {
 
 				break;
 
+			case "WD" : 
+				removeItensCurso1();
+
+				$('#curso_1opcao_turno').append($('<option>', { value: '8', text: 'Manhã (8h30 às 12h) - 4ª e 6ª feiras' }));
+
+	        	$('#conhecimentos').slideDown();
+	        	$('#conhecimentos_especificos').slideDown();
+
+	        	break;			
+
 			default :
 				removeItensCurso1();
 
-				if (opcao === "AD" || opcao === "WD" || opcao === "DG") {
+				if (opcao === "AD" || opcao === "DG") {
 					$('#curso_1opcao_turno').append($('<option>', { value: '8', text: 'Manhã (8h30 às 12h) - 4ª e 6ª feiras' }));
 		        	$('#curso_1opcao_turno').append($('<option>', { value: '9', text: 'Tarde (14h às 17h30) - 4ª e 6ª feiras' }));	
 				} 
@@ -169,10 +178,20 @@ $(document).ready(function() {
 
 				break;
 
+			case "WD" : 
+				removeItensCurso2();
+
+				$('#curso_2opcao_turno').append($('<option>', { value: '8', text: 'Manhã (8h30 às 12h) - 4ª e 6ª feiras' }));
+
+	        	$('#conhecimentos').slideDown();
+	        	$('#conhecimentos_especificos').slideDown();
+
+	        	break;						
+
 			default :
 				removeItensCurso2();
 
-				if (opcao === "AD" || opcao === "WD" || opcao === "DG") {
+				if (opcao === "AD" || opcao === "DG") {
 					$('#curso_2opcao_turno').append($('<option>', { value: '8', text: 'Manhã (8h30 às 12h) - 4ª e 6ª feiras' }));
 		        	$('#curso_2opcao_turno').append($('<option>', { value: '9', text: 'Tarde (14h às 17h30) - 4ª e 6ª feiras' }));	
 				} 

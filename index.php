@@ -4,7 +4,7 @@
 */
 
 /* Definições */
-$inscricao_exercicio = "2013.2";
+$inscricao_exercicio = "2014.1";
 $inscricao_status = true;
 $inscricao_bd = "";
 
@@ -56,8 +56,13 @@ $inscricao_bd = "";
 
 		<?php if ($inscricao_status): ?>
 
-		<p>Os cursos da Praça do Conhecimento de Nova Brasília têm como objetivo a formação de jovens e adultos em linguagens multimídia e o seu desenvolvimento pessoal, social, técnico, artístico e profissional. Com exceção dos cursos de Informática Básica e TV Comunitária e Comunicação Popular, que não possui critérios de idade e escolaridade, todos os outros cursos são para maiores de 14 anos e com nível de escolaridade igual ou superior ao 9º ano do Ensino Fundamental.
-		Os cursos acontecem duas vezes por semana, durante quatro meses e meio, nos dias e turnos descritos abaixo.</p>
+		<p>Os cursos da Praça do Conhecimento de Nova Brasília têm como objetivo a formação de jovens e
+		 adultos em linguagens multimídia e o seu desenvolvimento pessoal, social, técnico, artístico e 
+		 profissional. <strong>Com exceção do curso de <em>Informática Básica</em>, 
+		 que não possui critérios de idade e escolaridade, todos os outros cursos são para maiores 
+		 de 14 anos e com nível de escolaridade igual ou superior ao 9º ano do Ensino Fundamental.</strong>
+		Os cursos acontecem duas vezes por semana, durante quatro meses e meio, nos dias e turnos 
+		descritos abaixo.</p>
 
 		<table class="table table-striped table-bordered">
 			<thead>
@@ -74,29 +79,19 @@ $inscricao_bd = "";
 			</thead>
 			<tbody>
 				<tr>
-					<td>Informática Básica</td>
+					<td></td>
+					<td></td>
+					<td>Photoshop</td>
 					<td>Manhã e Tarde</td>
-					<td>Computação Gráfica</td>
-					<td>Manhã e Tarde</td>
-					<td>Design Gráfico</td>
-					<td>Manhã e Tarde</td>
-					<td>Vídeo</td>
-					<td>Manhã e Tarde</td>
+					<td>Web Design</td>
+					<td>Manhã</td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td></td>
 					<td></td>					
 					<td>Fotografia</td>
-					<td>Manhã e Tarde</td>
-					<td>Web Design</td>
-					<td>Manhã e Tarde</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>					
-					<td>Vídeo</td>
 					<td>Manhã e Tarde</td>
 					<td>Áudio Digital</td>
 					<td>Manhã e Tarde</td>
@@ -107,36 +102,26 @@ $inscricao_bd = "";
 					<td></td>
 					<td></td>					
 					<td>Tecnologia da Informação</td>
-					<td>Manhã e Tarde</td>
+					<td>manhã e tarde</td>
 					<td>Tecnologia da Informação</td>
 					<td>Noite</td>
+					<td>Tecnologia da Informação</td>
+					<td>Noite</td>
+				</tr>
+				<tr>
+					<td>Informática Básica</td>
+					<td>manhã e tarde</td>					
+					<td></td>
+					<td></td>
+					<td>Informática Básica</td>
+					<td>manhã e tarde</td>
 					<td></td>
 					<td></td>
 				</tr>				
-				<tr>
-					<td></td>
-					<td></td>					
-					<td>Informática Básica</td>
-					<td>Noite</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td>TV Comunitária e <br>Comunicação Popular</td>
-					<td>Tarde</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>					
-				</tr>
 			</tbody>
 		</table>
 
-		<p>As vagas dos cursos serão preenchidas mediante sorteios realizados no dia <strong>24/07/2013</strong>, 
+		<p>As vagas dos cursos serão preenchidas mediante sorteios realizados no dia <strong>21/01/2014</strong>, 
 			nos horários indicados na tabela abaixo. Os sorteios serão abertos ao público.</p>
 
 		<table class="table table-striped table-bordered">
@@ -152,37 +137,25 @@ $inscricao_bd = "";
 					<td>9h</td>
 				</tr>
 				<tr>
-					<td>Computação Gráfica</td>
+					<td>Fotografia</td>
 					<td>10h</td>
 				</tr>
 				<tr>					
-					<td>Design Gráfico</td>
+					<td>Photoshop</td>
 					<td>11h</td>
 				</tr>
 				<tr>					
-					<td>Fotografia</td>
-					<td>13h</td>
-				</tr>
-				<tr>					
-					<td>Vídeo</td>
+					<td>Web Design</td>
 					<td>14h</td>
 				</tr>
 				<tr>					
-					<td>Web Design</td>
+					<td>Tecnologia da Informação</td>
 					<td>15h</td>
 				</tr>
 				<tr>					
-					<td>Tecnologia da Informação</td>
-					<td>16h</td>
-				</tr>
-				<tr>					
 					<td>Informática Básica</td>
-					<td>17h</td>
-				</tr>		
-				<tr>
-					<td>TV Comunitária e TV Popular</td>
-					<td>17h45</td>
-				</tr>		
+					<td>16h</td>
+				</tr>				
 			</tbody>
 		</table>
 
@@ -212,13 +185,10 @@ $inscricao_bd = "";
 	    	 	<select id="curso_1opcao" name="curso_1opcao" required>
 	    	 		<option value=""></option>
 	    	 		<option value="AD">Áudio Digital</option>
-	    	 		<option value="CG">Computação Gráfica</option>
-	    	 		<option value="DG">Design Gráfico</option>
+	    	 		<option value="CG">Photoshop</option>
 	    	 		<option value="FT">Fotografia</option>
-	    	 		<option value="VI">Vídeo</option>
 	    	 		<option value="IB">Informática Básica</option>
 	    	 		<option value="TI">Tecnologia da Informação</option>
-	    	 		<option value="TV">TV Comunitária e Comunicação Popular</option>
 	    	 		<option value="WD">Web Design</option>	    	 		
 	    	 	</select>
 
@@ -232,13 +202,10 @@ $inscricao_bd = "";
 	    	 	<select id="curso_2opcao" name="curso_2opcao" required>
 	    	 		<option value=""></option>
 	    	 		<option value="AD">Áudio Digital</option>
-	    	 		<option value="CG">Computação Gráfica</option>
-	    	 		<option value="DG">Design Gráfico</option>
+	    	 		<option value="CG">Photoshop</option>
 	    	 		<option value="FT">Fotografia</option>
-	    	 		<option value="VI">Vídeo</option>
 	    	 		<option value="IB">Informática Básica</option>
 	    	 		<option value="TI">Tecnologia da Informação</option>
-	    	 		<option value="TV">TV Comunitária e Comunicação Popular</option>
 	    	 		<option value="WD">Web Design</option>
 	    	 	</select>
 
@@ -297,6 +264,8 @@ $inscricao_bd = "";
 
 				<h3>Escolaridade</h3>
 
+				<em>No ato da matrícula será solicitado o comprovante de escolaridade, exceto para os alunos do curso Informática Básica.</em><br>
+				<br>
 				<select id="escolaridade_periodo" name="escolaridade_periodo" required>
 					<option value="">Período</option>
 					<option value="fund_9">Cursando o 9º ano do ensino fundamental</option>

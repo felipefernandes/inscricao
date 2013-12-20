@@ -39,7 +39,7 @@ die ("Erro de conexão com localhost, o seguinte erro ocorreu -> ".mysql_error()
 
 //conectando com a tabela do banco de dados
 $database = 'webpraca_inscricao';
-$inscricao_tabela = "inscricao2013_2";
+$inscricao_tabela = "inscricao2014_1";
 $banco = mysql_select_db($database, $conexao); //nome da tabela onde os dados serão armazenados
 
 mysql_query("SET NAMES 'utf8'");
