@@ -9,12 +9,12 @@ $host     = 'localhost';
 $user 	  = 'root';
 $pass 	  = 'root';
 $database = 'webpraca_inscricao';
-$inscricao_tabela = "inscricao2013_2";
+$inscricao_tabela = "inscricao2014_1";
 
 //conectando com a tabela do banco de dados
 $conexao = mysql_connect($host, $user, $pass); 
 $database = 'webpraca_inscricao';
-$inscricao_tabela = "inscricao2013_2";
+$inscricao_tabela = "inscricao2014_1";
 $banco = mysql_select_db($database, $conexao);
 
 mysql_query("SET NAMES 'utf8'");

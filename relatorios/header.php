@@ -5,6 +5,7 @@
 
 include_once('restrito.php');
 include_once('db.php');
+include_once('utils.php');
 
 ?>
 
@@ -54,7 +55,7 @@ include_once('db.php');
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Curso<b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<?php 
-					$rCursos = mysql_query("SELECT * FROM cursos ORDER BY curso", $conexao) or die (mysql_error());
+					$rCursos = mysql_query("SELECT * FROM cursos WHERE ativo = 1 ORDER BY curso", $conexao) or die (mysql_error());
 					while ($dados = mysql_fetch_array($rCursos)) : ?>
 					<li><a href="curso.php?c=<?php echo $dados['id']; ?>"><?php echo $dados['curso']; ?></a></li>
 					<?php endwhile; ?>
@@ -74,7 +75,7 @@ include_once('db.php');
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorteados por curso<b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<?php 
-					$rCursos = mysql_query("SELECT * FROM cursos ORDER BY curso", $conexao) or die (mysql_error());
+					$rCursos = mysql_query("SELECT * FROM cursos WHERE ativo = 1 ORDER BY curso", $conexao) or die (mysql_error());
 					while ($dados = mysql_fetch_array($rCursos)) : ?>
 					<li><a href="sorteados.php?c=<?php echo $dados['id']; ?>"><?php echo $dados['curso']; ?></a></li>
 					<?php endwhile; ?>

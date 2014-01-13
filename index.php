@@ -105,16 +105,16 @@ $inscricao_bd = "";
 					<td>manhã e tarde</td>
 					<td>Tecnologia da Informação</td>
 					<td>Noite</td>
-					<td>Tecnologia da Informação</td>
-					<td>Noite</td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td>Informática Básica</td>
 					<td>manhã e tarde</td>					
 					<td></td>
 					<td></td>
-					<td>Informática Básica</td>
-					<td>manhã e tarde</td>
+					<td></td>
+					<td></td>
 					<td></td>
 					<td></td>
 				</tr>				
@@ -159,13 +159,13 @@ $inscricao_bd = "";
 			</tbody>
 		</table>
 
-		<p>Os nomes dos sorteados estarão disponíveis na Praça do Conhecimento de Nova Brasília e 
+		<p>Os nomes dos sorteados estarão disponíveis, no <strong>dia 22/01</strong> na Praça do Conhecimento de Nova Brasília e 
 		em nosso site: <a href="http://www.pracadoconhecimento.com.br" target="_blank">www.pracadoconhecimento.com.br</a></p>		
 
 		<hr>
 
 		<div class="well well-large">
-			<h4>Preencha com atenção todos os itens e em seguida anote estas informações geradas ou 
+			<h4>Preencha com atenção e em seguida anote estas informações geradas ou 
 				imprima esta página e apresente no dia da matricula.</h4>
 
 			<p>Em caso de dúvidas, entre em contato através do Fale Conosco do site, 

@@ -10,7 +10,7 @@ $curso2_turno   = $_REQUEST["c2t"];
 
 switch ($curso1) {
   case 'AD': $curso1 = "Áudio Digital"; break;
-  case 'CG': $curso1 = "Computação Gráfica"; break;
+  case 'CG': $curso1 = "Photoshop"; break;
   case 'DG': $curso1 = "Design Gráfico"; break;
   case 'FT': $curso1 = "Fotografia"; break;
   case 'IB': $curso1 = "Informática Básica"; break;
@@ -22,7 +22,7 @@ switch ($curso1) {
 
 switch ($curso2) {
   case 'AD': $curso2 = "Áudio Digital"; break;
-  case 'CG': $curso2 = "Computação Gráfica"; break;
+  case 'CG': $curso2 = "Photoshop"; break;
   case 'DG': $curso2 = "Design Gráfico"; break;
   case 'FT': $curso2 = "Fotografia"; break;
   case 'IB': $curso2 = "Informática Básica"; break;
@@ -130,7 +130,7 @@ switch ($curso2_turno) {
     <hr>
     <div class="well well-large">
       <h4>Anote estas informações geradas ou imprima esta página e apresente no dia da matricula, caso seja sorteado.</h4>
-      <p>Em caso de dúvidas, entre em contato através do Fale Conosco do site, ou diretamente com os monitores na Praça do Conhecimento.</p>
+      <p>Em caso de dúvidas, entre em contato através do Fale Conosco do site <a href="http://www.www.pracadoconhecimento.com.br" target="_blank">www.pracadoconhecimento.com.br</a> ou pelos telefones 98481—8552 ou 98481-8553  diretamente com os monitores na Praça do Conhecimento.</p>
     </div>
     <hr>
     <small>Boa Sorte!</small>

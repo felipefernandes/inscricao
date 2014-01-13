@@ -4,12 +4,12 @@
 // Registros
 $limite = 50; // define o numero de registros a serem exibidos
 $pagina = ( isset( $_GET['pag'] ) ) ? $_GET['pag'] : 1; //pega o valor da url
-$inicio = ($pagina * $limite) - $limite; // 1 * 50 - 50 = 0 => inicio: 0,50
+$inicio = ($pagina * $limite) - $limite; // 1 * 50 - 50 = 0 => inicio: (0,50)
 
-$queryRecords = "SELECT inscricao2013_2.id, c1.curso AS 'curso1', t1.turno AS 'turno1', c2.curso AS 'curso2', t2.turno AS 'turno2', inscricao2013_2.nome FROM `inscricao2013_2` LEFT JOIN cursos c1 ON c1.sigla = inscricao2013_2.curso1 LEFT JOIN cursos c2 ON c2.sigla = inscricao2013_2.curso2 LEFT JOIN turnos t1 ON t1.id = inscricao2013_2.curso1_turno LEFT JOIN turnos t2 ON t2.id = inscricao2013_2.curso2_turno LIMIT $inicio,$limite";
+$queryRecords = "SELECT inscricao2014_1.id, c1.curso AS 'curso1', t1.turno AS 'turno1', c2.curso AS 'curso2', t2.turno AS 'turno2', inscricao2014_1.nome FROM `inscricao2014_1` LEFT JOIN cursos c1 ON c1.sigla = inscricao2014_1.curso1 LEFT JOIN cursos c2 ON c2.sigla = inscricao2014_1.curso2 LEFT JOIN turnos t1 ON t1.id = inscricao2014_1.curso1_turno LEFT JOIN turnos t2 ON t2.id = inscricao2014_1.curso2_turno LIMIT $inicio,$limite";
 $resultRecords = mysql_query($queryRecords, $conexao) or die (mysql_error());
 
-$consulta = mysql_query("SELECT id FROM inscricao2013_2", $conexao);
+$consulta = mysql_query("SELECT id FROM inscricao2014_1", $conexao);
 $total_registros = mysql_num_rows($consulta);
 $total_paginas = ceil($total_registros / $limite);	/* Define o total de páginas a serem mostradas baseada
 na divisão do total de registros pelo limite de registros a serem mostrados */
@@ -42,7 +42,7 @@ na divisão do total de registros pelo limite de registros a serem mostrados */
 			<tbody>
 			<?php while ($dados = mysql_fetch_array($resultRecords)) : ?>
 				<tr>
-					<td><?php echo $dados['id']; ?></td>
+					<td><a href="candidato.php?id=<? echo $dados['id']; ?>"><?php echo $dados['id']; ?></a></td>
 					<td><?php echo $dados['nome']; ?></td>
 					<td><?php echo $dados['curso1']; ?></td>
 					<td><?php echo $dados['turno1']; ?></td>
